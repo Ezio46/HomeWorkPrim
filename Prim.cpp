@@ -77,12 +77,11 @@ int main() {
     g.addEdge(1, 2, 2);
     g.addEdge(2, 0, 4);
     g.addEdge(2, 3, 3);
-    g.addEdge(3, 4, 1);
-    g.addEdge(4, 3, 1);
-    g.addEdge(5, 4, 1);
-    g.addEdge(6, 5, 1);
-    g.addEdge(7, 6, 1);
+    g.addEdge(3, 4, 2);
+    g.addEdge(4, 5, 1);
+    g.addEdge(5, 6, 2);
     g.addEdge(6, 7, 1);
+    g.addEdge(7, 0, 3);
 
     vector<Edge> result = g.prim();
 
